@@ -1,5 +1,7 @@
 package com.miempresa.entidad;
 
+import org.junit.Test;
+
 /**
  * La clase Producto representa un producto con un nombre y un precio.
  * Proporciona métodos para acceder y modificar estos atributos, así como
@@ -62,5 +64,12 @@ public class Producto {
             throw new IllegalArgumentException("El precio no puede ser negativo: " + precio);
         }
         this.precio = precio;
+    }
+    
+    @Test
+    void duplicarPrecio() {
+    	this.precio *= 2;
+    	
+    	
     }
 }
